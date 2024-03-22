@@ -12,6 +12,28 @@ unzip -q ./MiD-FiLD_dataset
 ```
 to extract the `MID-FiLD.zip` folder in the cloned repository.
 
+After extraction, the overall tree will be like this:
+```
+.
+└── MID-FiLD_code/
+    ├── assets/
+    │   ├── instrument.png
+    │   ├── mood.png
+    │   └── track_role.png
+    ├── MiD-FiLD_dataset/
+    │   ├── train/
+    │   │   ├── MID_FiLD_0001.mid
+    │   │   ├── MID_FiLD_0002.mid
+    │   │   └── ...
+    │   ├── test/
+    │   │   ├── MID_FiLD_0031.mid
+    │   │   ├── MID_FiLD_0034.mid
+    │   │   └── ...
+    │   └── MID-FiLD_metadata.csv
+    ├── LICENSE
+    └── README.md
+```
+
 ### Metadata
 1. Each sample in MID-FiLD consists of 5 fields of metadata specified in the paper:
 
@@ -49,10 +71,4 @@ Values in mood: ['bouncy', 'calm', 'dreamy', 'funny', 'groovy', 'happy', 'hopefu
 
 ```
 
-5. Below shows the histogram of above 3 metadata classes:
-
-![image.png](attachment:image.png)
-
-![image-2.png](attachment:image-2.png)
-
-![image-3.png](attachment:image-3.png)
+5. The `./assets` directory contains the histogram of each classes in columns '`instrument`', '`track_role`', and '`mood`'.
