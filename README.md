@@ -10,7 +10,7 @@ To use MID-FiLD, first clone this repository and run
 ```ruby
 unzip -q ./MiD-FiLD_dataset
 ```
-to extract the `MID-FiLD.zip` folder in the cloned repository.
+to extract the `MID-FiLD_dataset.zip` file into `MID-FiLD_dataset/` directory in the cloned repository.
 
 After extraction, the overall tree will be like this:
 ```
@@ -52,9 +52,9 @@ df = pd.DataFrame(".MID-FiLD_dataset/MID-FiLD_metadata.csv", sep=",", index="Fal
 
 ```
 
-3. Each column of the dataframe contains the valud of metadata field, with 2 more auxiliary columns included:
+3. Each column of the dataframe contains the values for each metadata field, along with 2 more auxiliary columns:
 
-- `id`: ID of the sample
+- `id`: ID of the sample,
 - `split`: tagged with '`train`(3990 samples)' or '`test`(432 samples)'.
 
   Samples for each split category are placed in the path `./MID-FiLD_dataset/train/*` or `./MID-FiLD_dataset/test/*`.
