@@ -54,8 +54,8 @@ df = pd.DataFrame(".MID-FiLD_dataset/MID-FiLD_metadata.csv", sep=",", index="Fal
 
 3. Each column of the dataframe contains the valud of metadata field, with 2 more auxiliary columns included:
 
-- 'id': ID of the sample
-- 'split': tagged with 'train(3990 samples)' or 'test(432)'.
+- `id`: ID of the sample
+- `split`: tagged with '`train`(3990 samples)' or '`test`(432)'.
 
   Samples for each split category are placed in the path `./MID-FiLD_dataset/train/*` or `./MID-FiLD_dataset/test/*`.
 
